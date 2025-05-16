@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="assets/css/style.css"> <!-- Optional CSS -->
+</head>
+<body>
+
+  <h1>Contact Me</h1>
+
+  <form action="https://formsubmit.co/hemalatharaaji@gmail.com" method="POST" class="php-email-form">
+    <div>
+      <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+    <div>
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div>
+      <input type="text" name="subject" placeholder="Subject" required>
+    </div>
+    <div>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+    </div>
+
+    <!-- Prevent spam -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirect to thank-you page -->
+    <input type="hidden" name="_next" value="https://jayapriya-raaji.github.io/thank-you.html">
+
+    <div>
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+
+</body>
+</html>
